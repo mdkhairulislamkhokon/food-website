@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.font-exo {
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    font-size: 16px;
+}
+
+button {
+    background-color: #C2FBD7;
+    border-radius: 50px;
+    border-width: 0;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    font-family: "Exo", sans-serif;
+    height: 50px;
+    padding: 0 25px;
+    transition: all 200ms;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title {
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.title h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.title h3 {
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 95vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.food {
+    border: 2px solid salmon;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.food img {
+    width: 100%;
+}
+
+.food .price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    margin: 20px 0 20px 0;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 25px;
+    color: #474747;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
